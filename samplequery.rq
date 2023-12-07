@@ -1,0 +1,14 @@
+#+ summary: Lists grants with a CORDIS identifier
+#+ endpoint_in_url: False
+#+ endpoint: http://query.wikidata.org/sparql
+#+ tags:
+#+   - Grants
+
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?grant ?grantLabel ?cordis WHERE {
+  ?grant wdt:P3400 ?cordis .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
