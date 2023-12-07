@@ -1,5 +1,5 @@
 #+ summary: Lists grants with a CORDIS identifier
-#+ endpoint_in_url: False
+#+ endpoint_in_url: True
 #+ endpoint: https://cordis.europa.eu/datalab/sparql-endpoint/en
 #+ tags:
 #+   - Grants
